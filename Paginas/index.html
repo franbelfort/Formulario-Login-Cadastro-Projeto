@@ -1,17 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Novo Usuário</title>
+
+    <style type="text/css">
+
+        body{
+            background-color: #98b9f5;
+            font-family: sans-serif;
+            margin-left: 15%;
+            margin-top: 5%;
+            justify-content:center;
+            padding-bottom: 20px;
+            padding-top: 85px;
+        }
+
+        .form{
+            flex-direction: center;
+            font-family: 'Arial';
+            padding-right: 15px;
+            line-height:30px;
+        }
+
+        #titulo{
+            padding-top:20px;
+            padding-bottom: 15px;
+            padding-left: 98px;
+            font-size: 40px;
+            font-family:'Arial';
+            text-align: justify;
+            flex-direction: center;
+            align-items: center;
+        }
+
+        .sombra{
+            box-shadow: rgb(51, 7, 102) 0.5em 0.5em 3em
+        }
+
+        fieldset{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color:#abe1f8;
+            border-radius: 30px;
+            border-color:#ce88f9;
+            margin:10px;
+            margin-right: 50px;
+            margin-left: 190px;
+            padding-right:35px;
+            padding-left: 35px;
+            color:rgb(72, 5, 93);
+            width: 490px;
+        }
+
+        input, textarea, select{
+
+            border: 0;
+            border-bottom: 2px solid rgb(88, 8, 77);
+            font-family: sans-serif;
+            outline:0;
+            background-color: #abe1f8;
+            }
+
+            .buttom_hover:hover{
+                background-color: rgba(6, 137, 193, 0.364);
+                color: #ffffff;
+            }
+    </style>
+
 </head>
 <body>
-    <form action="./login.html">
+    <form class="form" action="./login.html">
+        
+        <fieldset class="sombra">
 
         <table>
             <tr>
-                <th>Formulario de novo usuario</th>
+                <th id="titulo">Adicione uma conta</th>
             </tr>
             <tr>
                 <td><label for="email">Email</label></td>
@@ -29,10 +95,11 @@
 
             <tr>
                 <td>
-                    <input type="submit" id="login" name="login" value="Confirmar">
+                    <input class="buttom_hover" type="submit" id="login" name="login" value="Confirmar">
                 </td>
             </tr>
         </table>
+    </fieldset>
     </form>
 </body>
 </html>
